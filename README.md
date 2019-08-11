@@ -11,5 +11,5 @@ O construtor da classe **AnalizadorDeTexto** passa, por parâmetro, uma *string*
 2. O tamanho dela;
 3. Quantidade de vogais;
 4. Quantidade de espaços brancos;
-5. Quantidades de consoates.
+5. Quantidades de consoantes.
 > Nesse exemplo a *string: String Exemplo* é passada como parâmetro.
