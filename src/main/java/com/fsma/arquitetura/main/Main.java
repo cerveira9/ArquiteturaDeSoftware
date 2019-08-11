@@ -11,9 +11,11 @@ public class Main {
 //		LeitorDeTexto leitorDeTexto = new LeitorDeTexto("/Users/fernandocerveira/Documents/AI/darknet/arq.txt");
 //		leitorDeTexto.lerArquivo();
 		
-		AnalizadorDeTexto analizadorDeTexto = new AnalizadorDeTexto("Fernando");
+		AnalizadorDeTexto analizadorDeTexto = new AnalizadorDeTexto("Fernando Cerveira");
 		analizadorDeTexto.getTamanhoDaString();
 		analizadorDeTexto.getQuantidadeDeVogais();
+		analizadorDeTexto.getQuantidadeDeEspacosBrancos();
+		analizadorDeTexto.getQuantidadeDeConsoantes();
 		
 	}
 }
