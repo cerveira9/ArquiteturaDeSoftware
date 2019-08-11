@@ -2,7 +2,7 @@ package com.fsma.arquitetura.main;
 
 import java.io.IOException;
 
-import com.fsma.arquitetura.leitor.LeitorDeTexto;
+import com.fsma.arquitetura.arquivo.LeitorDeTexto;
 
 public class Main {
 

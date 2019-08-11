@@ -1,4 +1,4 @@
-package com.fsma.arquitetura.leitor;
+package com.fsma.arquitetura.arquivo;
 
 import java.io.IOException;
 import java.nio.file.Files;
