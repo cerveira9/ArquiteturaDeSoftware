@@ -12,6 +12,10 @@ public class AnalizadorDeTexto {
 		System.out.println("String Analizada: " + this.stringAnalizada);
 	}
 
+	public void setStringAnalizada(String stringAnalizada) {
+		this.stringAnalizada = stringAnalizada;
+	}
+	
 	public void getTamanhoDaString() {
 		System.out.println("Tamanho da String: " + this.stringAnalizada.length());
 	}
@@ -44,10 +48,4 @@ public class AnalizadorDeTexto {
 		}
 		System.out.println("Quantidade de consoantes: " + quantidadeDeConsoantes);
 	}
-
-
-	public void setStringAnalizada(String stringAnalizada) {
-		this.stringAnalizada = stringAnalizada;
-	}
-
 }
