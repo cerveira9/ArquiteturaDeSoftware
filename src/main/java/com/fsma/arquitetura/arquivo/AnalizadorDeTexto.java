@@ -27,12 +27,22 @@ public class AnalizadorDeTexto {
 		System.out.println("Quantidade de vogais: " + quantidadeDeVogais);
 	}
 
-	public int getQuantidadeDeEspacosBrancos() {
-		return quantidadeDeEspacosBrancos;
+	public void getQuantidadeDeEspacosBrancos() {
+		for (int i = 0; i < this.stringAnalizada.length(); i++) {
+			char c = this.stringAnalizada.charAt(i);
+			if (c == 'b' || c == 'c' || c == 'd' || c == 'f' || c == 'g' || c == 'h' || c == 'j' || c == 'k' || c == 'l' || c == 'm' || c == 'n' || c == 'p' || c == 'q' || c == 'r' || c == 's' || c == 't' || c == 'v' || c == 'w' || c == 'x' || c == 'y' || c == 'z')
+				quantidadeDeVogais++;	
+		}
+		System.out.println("Quantidade de espaços brancos: " + quantidadeDeEspacosBrancos);
 	}
 
-	public int getQuantidadeDeConsoantes() {
-		return quantidadeDeConsoantes;
+	public void getQuantidadeDeConsoantes() {
+		for (int i = 0; i < this.stringAnalizada.length(); i++) {
+			char c = this.stringAnalizada.charAt(i);
+			if (c == ' ')
+				quantidadeDeVogais++;	
+		}
+		System.out.println("Quantidade de consoantes: " + quantidadeDeConsoantes);
 	}
 
 	public String getStringAnalizada() {
