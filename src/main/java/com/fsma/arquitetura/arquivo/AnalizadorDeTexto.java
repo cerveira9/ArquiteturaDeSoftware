@@ -9,7 +9,6 @@ public class AnalizadorDeTexto {
 	private int quantidadeDeConsoantes;
 
 	public AnalizadorDeTexto(String stringAnalizada) {
-		super();
 		this.setStringAnalizada(stringAnalizada.toLowerCase());
 		System.out.println("String Analizada: " + this.stringAnalizada);
 	}
@@ -48,9 +47,6 @@ public class AnalizadorDeTexto {
 		System.out.println("Quantidade de consoantes: " + quantidadeDeConsoantes);
 	}
 
-	public String getStringAnalizada() {
-		return stringAnalizada;
-	}
 
 	public void setStringAnalizada(String stringAnalizada) {
 		this.stringAnalizada = stringAnalizada;
