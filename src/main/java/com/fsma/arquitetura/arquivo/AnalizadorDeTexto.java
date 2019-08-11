@@ -3,7 +3,6 @@ package com.fsma.arquitetura.arquivo;
 public class AnalizadorDeTexto {
 
 	private String stringAnalizada;
-	private int tamanhoDaString;
 	private int quantidadeDeVogais;
 	private int quantidadeDeEspacosBrancos;
 	private int quantidadeDeConsoantes;
@@ -14,8 +13,7 @@ public class AnalizadorDeTexto {
 	}
 
 	public void getTamanhoDaString() {
-		this.tamanhoDaString = this.stringAnalizada.length();
-		System.out.println("Tamanho da String: " + this.tamanhoDaString);
+		System.out.println("Tamanho da String: " + this.stringAnalizada.length());
 	}
 
 	public void getQuantidadeDeVogais() {
