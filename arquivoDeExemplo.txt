@@ -1,0 +1,4 @@
+Arquivo de exemplo da atividade para o dia 15/8
+Professor: Rogério
+Matéria: Arquitetura e modelagem de software
+Faculdade Salesiana Maria auxiliadora
