@@ -11,14 +11,12 @@ public class AnalizadorDeTexto {
 	
 	public AnalizadorDeTexto(String stringAnalizada) {
 		super();
-		this.stringAnalizada = stringAnalizada;
-	}
-	public String getStringAnalizada() {
-		return stringAnalizada;
+		this.setStringAnalizada(stringAnalizada);
 	}
 
-	public int getTamanhoDaString() {
-		return tamanhoDaString;
+	public String getTamanhoDaString() {
+		this.tamanhoDaString = this.stringAnalizada.length();
+		return "Tamanho da String: " + tamanhoDaString;
 	}
 
 	public int getQuantidadeDeVogais() {
@@ -33,6 +31,13 @@ public class AnalizadorDeTexto {
 		return quantidadeDeConsoantes;
 	}
 
-	
+	public String getStringAnalizada() {
+		return stringAnalizada;
+	}
+
+	public void setStringAnalizada(String stringAnalizada) {
+		this.stringAnalizada = stringAnalizada;
+	}
+
 	
 }
