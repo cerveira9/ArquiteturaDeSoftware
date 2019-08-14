@@ -30,6 +30,11 @@ public class LeitorDeTexto {
 		List<String> linhasArquivo = Files.readAllLines(path);
 		for (String linha : linhasArquivo) {
 			System.out.println(linha);
+			AnalizadorDeTexto analizadorDeTexto = new AnalizadorDeTexto(linha);
+			analizadorDeTexto.getTamanhoDaString();
+			analizadorDeTexto.getQuantidadeDeVogais();
+			analizadorDeTexto.getQuantidadeDeEspacosBrancos();
+			analizadorDeTexto.getQuantidadeDeConsoantes();
 		}
 
 	}
