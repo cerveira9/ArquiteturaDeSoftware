@@ -1,10 +1,8 @@
 package com.fsma.arquitetura.arquivo;
 
+import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
+import java.util.Scanner;
 
 public class LeitorDeTexto {
 
@@ -25,17 +23,17 @@ public class LeitorDeTexto {
 	}
 
 	public void lerArquivo() throws IOException {
-		Path path = Paths.get(this.caminhoDoArquivo);
-
-		List<String> linhasArquivo = Files.readAllLines(path);
-		for (String linha : linhasArquivo) {
-			System.out.println(linha);
+		Scanner scanner = new Scanner(new FileReader(this.caminhoDoArquivo));
+		scanner.useDelimiter("\\n");
+        while (scanner.hasNext()) {
+        	String linha = scanner.next();
 			AnalizadorDeTexto analizadorDeTexto = new AnalizadorDeTexto(linha);
 			analizadorDeTexto.getTamanhoDaString();
 			analizadorDeTexto.getQuantidadeDeVogais();
 			analizadorDeTexto.getQuantidadeDeEspacosBrancos();
 			analizadorDeTexto.getQuantidadeDeConsoantes();
-		}
+        }
+        scanner.close();
 
 	}
 
