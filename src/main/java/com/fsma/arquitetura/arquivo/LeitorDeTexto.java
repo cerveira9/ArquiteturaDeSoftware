@@ -28,10 +28,10 @@ public class LeitorDeTexto {
         while (scanner.hasNext()) {
         	String linha = scanner.next();
 			AnalisadorLinha analizadorDeTexto = new AnalisadorLinha(linha);
-			analizadorDeTexto.getTamanhoDaString();
-			analizadorDeTexto.getQuantidadeDeVogais();
-			analizadorDeTexto.getQuantidadeDeEspacosBrancos();
-			analizadorDeTexto.getQuantidadeDeConsoantes();
+			System.out.println("Tamanho da String: " + analizadorDeTexto.getTamanhoDaString());
+			System.out.println("Quantidade de Vogais da String: " + analizadorDeTexto.getQuantidadeDeVogais());
+			System.out.println("Quantidade de Espaços Brancos da String: " + analizadorDeTexto.getQuantidadeDeEspacosBrancos());
+			System.out.println("Quantidade de Consoantes da String: " + analizadorDeTexto.getQuantidadeDeConsoantes());
         }
         scanner.close();
 
