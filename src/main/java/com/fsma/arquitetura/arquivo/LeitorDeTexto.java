@@ -27,7 +27,7 @@ public class LeitorDeTexto {
 		scanner.useDelimiter("\\n");
         while (scanner.hasNext()) {
         	String linha = scanner.next();
-			AnalizadorDeTexto analizadorDeTexto = new AnalizadorDeTexto(linha);
+			AnalisadorLinha analizadorDeTexto = new AnalisadorLinha(linha);
 			analizadorDeTexto.getTamanhoDaString();
 			analizadorDeTexto.getQuantidadeDeVogais();
 			analizadorDeTexto.getQuantidadeDeEspacosBrancos();

@@ -1,13 +1,13 @@
 package com.fsma.arquitetura.arquivo;
 
-public class AnalizadorDeTexto {
+public class AnalisadorLinha {
 
 	private String stringAnalizada;
-	private int quantidadeDeVogais;
-	private int quantidadeDeEspacosBrancos;
-	private int quantidadeDeConsoantes;
+	private int quantidadeVogais;
+	private int quantidadeEspacosBrancos;
+	private int quantidadeConsoantes;
 
-	public AnalizadorDeTexto(String stringAnalizada) {
+	public AnalisadorLinha(String stringAnalizada) {
 		this.setStringAnalizada(stringAnalizada.toLowerCase());
 		System.out.println("String Analizada: " + this.stringAnalizada);
 	}
@@ -16,36 +16,36 @@ public class AnalizadorDeTexto {
 		this.stringAnalizada = stringAnalizada;
 	}
 	
-	public void getTamanhoDaString() {
-		System.out.println("Tamanho da String: " + this.stringAnalizada.length());
+	public int getTamanhoDaString() {
+		return this.stringAnalizada.length();
 	}
 
-	public void getQuantidadeDeVogais() {
+	public int getQuantidadeDeVogais() {
 		for (int i = 0; i < this.stringAnalizada.length(); i++) {
 			char c = this.stringAnalizada.charAt(i);
 			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-				quantidadeDeVogais++;
+				quantidadeVogais++;
 		}
-		System.out.println("Quantidade de vogais: " + quantidadeDeVogais);
+		return quantidadeVogais;
 	}
 
-	public void getQuantidadeDeEspacosBrancos() {
+	public int getQuantidadeDeEspacosBrancos() {
 		for (int i = 0; i < this.stringAnalizada.length(); i++) {
 			char c = this.stringAnalizada.charAt(i);
 			if (c == ' ')
-				quantidadeDeEspacosBrancos++;
+				quantidadeEspacosBrancos++;
 		}
-		System.out.println("Quantidade de espaços brancos: " + quantidadeDeEspacosBrancos);
+		return quantidadeEspacosBrancos;
 	}
 
-	public void getQuantidadeDeConsoantes() {
+	public int getQuantidadeDeConsoantes() {
 		for (int i = 0; i < this.stringAnalizada.length(); i++) {
 			char c = this.stringAnalizada.charAt(i);
 			if (c == 'b' || c == 'c' || c == 'd' || c == 'f' || c == 'g' || c == 'h' || c == 'j' || c == 'k' || c == 'l'
 					|| c == 'm' || c == 'n' || c == 'p' || c == 'q' || c == 'r' || c == 's' || c == 't' || c == 'v'
 					|| c == 'w' || c == 'x' || c == 'y' || c == 'z')
-				quantidadeDeConsoantes++;
+				quantidadeConsoantes++;
 		}
-		System.out.println("Quantidade de consoantes: " + quantidadeDeConsoantes);
+		return quantidadeConsoantes;
 	}
 }
