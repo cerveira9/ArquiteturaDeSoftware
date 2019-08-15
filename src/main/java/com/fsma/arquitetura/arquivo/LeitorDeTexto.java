@@ -22,7 +22,7 @@ public class LeitorDeTexto {
 		this.caminhoDoArquivo = caminhoDoArquivo;
 	}
 
-	public void lerArquivo() throws IOException {
+	public void imprimirLinhas() throws IOException {
 		Scanner scanner = new Scanner(new FileReader(this.caminhoDoArquivo));
 		scanner.useDelimiter("\\n");
         while (scanner.hasNext()) {

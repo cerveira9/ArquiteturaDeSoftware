@@ -8,6 +8,6 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		LeitorDeTexto leitorDeTexto = new LeitorDeTexto("arquivoDeExemplo.txt");
-		leitorDeTexto.lerArquivo();
+		leitorDeTexto.imprimirLinhas();
 	}
 }
